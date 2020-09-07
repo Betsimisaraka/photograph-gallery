@@ -3,5 +3,19 @@ html {
 }
 
 body {
-  background-color: aqua;
+  background-color: $base-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-inline-start: 14px;
+  margin-inline-end: 15px;
+}
+
+ul,
+figure,
+p {
+  margin: 0;
+  padding: 0;
 }

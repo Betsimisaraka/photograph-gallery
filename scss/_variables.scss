@@ -1,1 +1,6 @@
 @import "./components/fonts";
+@import "./components/colors";
+
+@function image($filename) {
+  @return url("../images/#{$filename}");
+}
