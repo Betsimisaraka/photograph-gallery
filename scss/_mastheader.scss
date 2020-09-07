@@ -1,0 +1,72 @@
+@import "variables";
+
+.masthead {
+  padding-block-start: 31px;
+  padding-block-end: 75px;
+}
+
+.previous a {
+  @extend %small-font;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.previous a::before {
+  content: '';
+  background-image: image("icon_arrow_left.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+}
+
+.masthead_heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 64px;
+  color: $base-color;
+  margin: 0;
+  padding-block-start: 69px;
+  padding-block-end: 65px;
+}
+
+.masthead-description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(#{$default-font-size} + 2px);
+  line-height: 32px;
+  color: $base-color;
+}
+
+.images_sample {
+  padding-block-start: 82px;
+  padding-block-end: 92px;
+  position: absolute;
+}
+
+.masthead_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+}
+
+.masthead_list__items--result,
+.masthead_list__items--categorie {
+  @extend %small-font;
+  font-weight: bold;
+}
+
+
+.masthead_list__items--categorie {
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding-block-end: 8px;
+}
+
+.masthead_list__items--result {
+  color: $base-color;
+}

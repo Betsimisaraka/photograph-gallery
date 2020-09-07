@@ -8,3 +8,14 @@
   display: block;
   text-indent: -999px;
 }
+
+@mixin smallest-fonts {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: $default-font-size;
+  line-height: $base-line-height;
+}
+
+%small-font {
+  @include smallest-fonts;
+}

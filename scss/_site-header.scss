@@ -2,7 +2,7 @@
 
 .site_header {
   background-color: $site-header-background-color;
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   left: 0;
@@ -17,7 +17,7 @@
   font-weight: normal;
   font-size: calc(#{$default-font-size} + 0.5rem);
   line-height: calc(#{$base-line-height} + 8px);
-  color: $base-color;
+  color:$bg-heading-color;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -84,12 +84,9 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 }
 
 .site_header__lists .site_header__list--items .site_header__list--link {
-  font-family: 'DM Sans';
-  font-style: normal;
+  @extend %small-font;
   font-weight: bold;
-  font-size: $default-font-size;
-  line-height: $base-line-height;
-  color: $base-color;
+  color: $bg-heading-color;
 }
 
 .site_header__lists .site_header__list--items .active,
