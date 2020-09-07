@@ -1,0 +1,10 @@
+@mixin nav-ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text-indent {
+  display: block;
+  text-indent: -999px;
+}

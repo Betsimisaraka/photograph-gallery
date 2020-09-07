@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: $base-color;
+  background-color: $body-background-color;
   margin: 0;
   padding: 0;
 }
@@ -13,9 +13,16 @@ body {
   margin-inline-end: 15px;
 }
 
-ul,
 figure,
 p {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  @include nav-ul;
+}
+
+nav > ul > li a {
+  text-decoration: none;
 }

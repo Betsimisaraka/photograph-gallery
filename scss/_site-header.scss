@@ -15,8 +15,8 @@
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: calc(#{$default-font-size} + 0.5rem);
+  line-height: calc(#{$base-line-height} + 8px);
   color: $base-color;
   text-transform: uppercase;
   margin: 0;
@@ -25,14 +25,13 @@
 
 input[type="checkbox"] {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: 4%;
   left: 90%;
 }
 
 .site_header--span {
-  display: block;
-  text-indent: -999px;
+  @include text-indent;
 }
 
 .label_menu {
@@ -42,29 +41,29 @@ input[type="checkbox"] {
   background-image: image("icon_menu.svg");
   background-repeat: no-repeat;
   background-size: 1rem;
-  top: 50%;
-  left: 90%;
+  top: 40%;
+  left: 92%;
 }
 
 .site_header__navigation {
-    padding: 1rem;
-    background-color: #f8f8f8;
+    padding: 2rem;
+    background-color: lightslategray;
     position: absolute;
     z-index: 2;
     top: 0;
     left: 0;
-    bottom: 0;
-    width: 250px;
-    box-shadow: 0 0 50px rgba(0,0,0,.5);
-    transform: translateX(-80%);
+    bottom: 100%;
+    width: 200px;
+    height: 100vh;
+    transform: translateX(-100%);
     transition: transform 0.3s;
 }
 
-body > [type="checkbox"]:checked ~ .site_header__navigation {
-  transform: translateX(50%);
+body > input[type="checkbox"]:checked ~ .site_header .site_header__navigation {
+  transform: translateX(0%);
 }
 
-body > [type="checkbox"]:checked ~ header label {
+body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   position: absolute;
   z-index: 2;
   top: 0;
@@ -73,9 +72,28 @@ body > [type="checkbox"]:checked ~ header label {
   left: 0;
   height: 100%;
   width: 100%;
-  //background: rgba(0,0,0,.25);
 }
 
-body > [type="checkbox"]:checked ~ main {
-  z-index: 1;
+.site_header__lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &  .site_header__list--items +  .site_header__list--items {
+    padding-block-start: 1rem;
+  }
+}
+
+.site_header__lists .site_header__list--items .site_header__list--link {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: $default-font-size;
+  line-height: $base-line-height;
+  color: $base-color;
+}
+
+.site_header__lists .site_header__list--items .active,
+.site_header__lists .site_header__list--link:hover {
+  color: black;
+  opacity: 0.5;
 }
