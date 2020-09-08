@@ -45,7 +45,23 @@
 .images_sample {
   padding-block-start: 82px;
   padding-block-end: 92px;
-  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 9px;
+  row-gap: 9px;
+}
+
+picture {
+  position: relative;
+  display: block;
+}
+
+.images_sample picture img {
+  border-radius: 5px;
+}
+
+.images_sample .image_1 {
+  grid-column: 1 / 6;
 }
 
 .masthead_list {
