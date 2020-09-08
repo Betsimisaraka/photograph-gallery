@@ -1,9 +1,17 @@
 .site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
-.masthead_list__items--categorie {
+.masthead_list__items--categorie, .information_recommendation {
   font-family: 'DM Sans';
   font-style: normal;
   font-size: 1rem;
   line-height: 24px; }
+
+.masthead-description, .information_description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(1rem + 2px);
+  line-height: 32px;
+  color: #000000; }
 
 html {
   font-family: "DM Sans", Arial, Helvetica, sans-serif; }
@@ -31,11 +39,19 @@ body * a {
   text-decoration: none; }
 
 .site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
-.masthead_list__items--categorie {
+.masthead_list__items--categorie, .information_recommendation {
   font-family: 'DM Sans';
   font-style: normal;
   font-size: 1rem;
   line-height: 24px; }
+
+.masthead-description, .information_description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(1rem + 2px);
+  line-height: 32px;
+  color: #000000; }
 
 .site_header {
   background-color: #434CCC;
@@ -121,11 +137,19 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   opacity: 0.5; }
 
 .site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
-.masthead_list__items--categorie {
+.masthead_list__items--categorie, .information_recommendation {
   font-family: 'DM Sans';
   font-style: normal;
   font-size: 1rem;
   line-height: 24px; }
+
+.masthead-description, .information_description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(1rem + 2px);
+  line-height: 32px;
+  color: #000000; }
 
 .masthead {
   padding-block-start: 31px;
@@ -154,14 +178,6 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   margin: 0;
   padding-block-start: 69px;
   padding-block-end: 65px; }
-
-.masthead-description {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: normal;
-  font-size: calc(1rem + 2px);
-  line-height: 32px;
-  color: #000000; }
 
 .images_sample {
   padding-block-start: 82px;
@@ -197,3 +213,39 @@ picture {
 
 .masthead_list__items--result {
   color: #000000; }
+
+.site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
+.masthead_list__items--categorie, .information_recommendation {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 24px; }
+
+.masthead-description, .information_description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(1rem + 2px);
+  line-height: 32px;
+  color: #000000; }
+
+.information {
+  padding-block-end: 105px; }
+
+.information_header {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000; }
+
+.information_heading {
+  margin: 0;
+  padding-block-end: 31px; }
+
+.information_recommendation {
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+  padding-block-start: 32px;
+  padding-block-end: 31px; }
