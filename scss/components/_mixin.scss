@@ -55,7 +55,7 @@
   @include description;
 }
 
-@mixin container-desk($width: 1000px) {
+@mixin container-desk($width: 1170px) {
   margin-inline-end: auto;
   margin-inline-start: auto;
   max-width: $width;

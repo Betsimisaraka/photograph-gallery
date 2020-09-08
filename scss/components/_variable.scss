@@ -1,5 +1,5 @@
-$faux_column_width: 1000px;
-$desktop_min_width: $faux_column_width + 100px;
+$faux_column_width: 1170px;
+$desktop_min_width: $faux_column_width + 30px;
 
 @function image($filename) {
   @return url("../images/#{$filename}");
