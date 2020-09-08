@@ -44,8 +44,8 @@
         </p>
         <figure class="images_sample">
           <picture class="image_1">
-            <!-- <source media="(min-width: 1170px)" srcset="./images/rock_carvings_lg.jpg">
-            <source media="(min-width: 768px)" srcset="./images/rock_carvings_sm.jpg"> -->
+            <source media="(min-width: 1170px)" srcset="./images/rock_carvings_lg.jpg">
+            <source media="(min-width: 768px)" srcset="./images/rock_carvings_sm.jpg">
             <img src="./images/rock_sm.jpg" alt="Rock carvings image">
           </picture>
           <picture class="image_2">
@@ -89,13 +89,35 @@
         <header class="information_header">
           <h3 class="information_heading">Mineral carvings</h3>
         </header>
-        <p class="information_description description">Deep in the deserts of Morroco, lies a dried-up valley, featuring some of the most exquisite rock formations, carved millions of years ago.</p>
-        <p class="information_recommendation">To truly experience these beautiful formations, one has to visit them in person. I hope my photos have managed to capture the sheer size – gravitas even – and spellbinding nature of these eroded walls.</p>
+        <p class="information_description description">Deep in the deserts of Morroco, lies a dried-up valley, featuring
+          some of the most exquisite rock formations, carved millions of years ago.</p>
+        <p class="information_recommendation">To truly experience these beautiful formations, one has to visit them in
+          person. I hope my photos have managed to capture the sheer size – gravitas even – and spellbinding nature of
+          these eroded walls.</p>
         <ul class="social_links">
           <li><a class="icon icon_facebook" href="/facebook">Facebook</a></li>
           <li><a class="icon icon_twitter" href="/twitter">Twitter</a></li>
           <li><a class="icon icon_instagram" href="/instagram">instagram</a></li>
         </ul>
+      </div>
+    </article>
+    <article class="updates">
+      <div class="container">
+        <p class="updates_categorie">Latest</p>
+        <header class="upadates_header">
+          <h3 class="updates_heading">Stay up-to-date with my updates</h3>
+        </header>
+        <form class="form_subscribe" action="/subscribe" mehtod="POST">
+          <div class="form_row">
+            <label for="subscribe_email" class="updates_label">Your email address</label>
+            <div class="form_field">
+              <input type="email" name="email" id="subscribe_email" placeholder="e.g. jesse@gmail.com" required>
+            </div>
+          </div>
+          <div class="form_row form_actions">
+            <button class="updates_submit" type="submit">Subscribe</button>
+          </div>
+        </form>
       </div>
     </article>
   </main>
