@@ -1,0 +1,25 @@
+.social_links {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width: 1.5rem;
+  display: block;
+  text-indent: -999px;
+  margin-inline-end: 10px;
+}
+
+.icon_facebook {
+  background-image: image("icon_facebook.svg");
+}
+
+.icon_twitter {
+  background-image: image("icon_twitter.svg");
+}
+
+.icon_instagram {
+  background-image: image("icon_instagram.svg");
+}

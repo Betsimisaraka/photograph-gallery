@@ -249,3 +249,24 @@ picture {
   color: rgba(0, 0, 0, 0.5);
   padding-block-start: 32px;
   padding-block-end: 31px; }
+
+.social_links {
+  display: flex;
+  flex-direction: row; }
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  width: 1.5rem;
+  display: block;
+  text-indent: -999px;
+  margin-inline-end: 10px; }
+
+.icon_facebook {
+  background-image: url("../images/icon_facebook.svg"); }
+
+.icon_twitter {
+  background-image: url("../images/icon_twitter.svg"); }
+
+.icon_instagram {
+  background-image: url("../images/icon_instagram.svg"); }
