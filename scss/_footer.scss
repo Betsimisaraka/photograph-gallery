@@ -1,0 +1,85 @@
+@import "variables";
+
+.footer {
+  background-color: $bg-heading-color;
+}
+
+.footer_heading {
+  @extend %big-headeing;
+  color: $base-color;
+}
+
+.footer_presentation,
+.footer__list--link,
+.image_name,
+.footer_creater_modifier,
+.footer_creater_copyright {
+  @extend %small-font;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.active {
+  @extend %small-font;
+  font-weight: bold;
+  color: $base-color;
+}
+
+.footer__list--link:hover {
+  color: $base-color;
+  font-weight: bold;
+}
+
+.footer_list--items-active {
+  padding-bottom: 16px;
+}
+
+.footer__lists li + li {
+  padding-top: 8px;
+}
+
+.image_date {
+  @include smallest-font;
+  line-height: $base-line-height;
+}
+
+.footer_presentation {
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.footer_personal__info {
+  padding-top: 76px;
+  padding-bottom: 79px;
+}
+
+.footer_images__container {
+  padding-top: 78px;
+  padding-bottom: 70px;
+}
+
+.footer_woman__images,
+.footer_passage__images {
+  display: flex;
+  flex-direction: row;
+  & picture img {
+    border-radius: 10px;
+    transform: scale(0.7);
+  }
+}
+
+.footer_images__lists  {
+  margin-inline-start: -1.5rem;
+  & div {
+    margin-block-start: 0.5rem;
+  }
+}
+
+.footer_creater {
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding-top: 27px;
+  padding-bottom: 29px;
+  & p + p {
+    padding-top: 8px;
+  }
+}
