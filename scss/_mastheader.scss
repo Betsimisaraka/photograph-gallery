@@ -34,12 +34,7 @@
 }
 
 .masthead-description {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: normal;
-  font-size: calc(#{$default-font-size} + 2px);
-  line-height: 32px;
-  color: $base-color;
+  @extend %description-paragraph;
 }
 
 .images_sample {

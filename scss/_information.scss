@@ -1,0 +1,31 @@
+@import "variables";
+
+.information {
+  padding-block-end: 105px;
+}
+
+.information_header {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: $base-color;
+}
+
+.information_heading {
+  margin: 0;
+  padding-block-end: 31px;
+} 
+
+.information_description {
+  @extend %description-paragraph;
+}
+
+.information_recommendation {
+  @extend %small-font;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.5);
+  padding-block-start: 32px;
+  padding-block-end: 31px;
+}
