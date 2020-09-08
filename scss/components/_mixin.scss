@@ -32,3 +32,23 @@
 %description-paragraph {
   @include description;
 }
+
+@mixin container-desk($width: 1170px) {
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  max-width: $width;
+}
+
+@mixin sub-title {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: $base-color;
+  margin: 0;
+}
+
+%sub-headings {
+  @include sub-title;
+}

@@ -1,0 +1,56 @@
+@import "variables";
+
+.updates {
+  background-color: $updates-color;
+  padding-block-start: 63px;
+  padding-block-end: 54px;
+}
+
+.updates_categorie {
+  @extend %small-font;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.updates_heading {
+  @extend %sub-headings;
+  padding-top: 19px;
+  padding-bottom: 44px;
+}
+
+.updates_label {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $base-color;
+}
+
+.updates_submit {
+  background: #434CCC;
+  border-radius: 5px;
+  @extend %small-font;
+  font-weight: bold;
+  text-align: center;
+  color: $bg-heading-color;
+  border: none;
+  padding: 13px 45.5px 11px 45.5px;
+}
+
+#subscribe_email {
+  background: $bg-heading-color;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  padding: 13px 11px 16px;
+}
+
+#subscribe_email::placeholder {
+  @extend %small-font;
+  color: rgba(0, 0, 0, 0.5)
+}

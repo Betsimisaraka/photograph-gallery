@@ -1,5 +1,5 @@
 .site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
-.masthead_list__items--categorie, .information_recommendation {
+.masthead_list__items--categorie, .information_recommendation, .updates_categorie, .updates_submit, #subscribe_email::placeholder {
   font-family: 'DM Sans';
   font-style: normal;
   font-size: 1rem;
@@ -12,6 +12,15 @@
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
+
+.information_header, .updates_heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  margin: 0; }
 
 html {
   font-family: "DM Sans", Arial, Helvetica, sans-serif; }
@@ -38,8 +47,15 @@ ul {
 body * a {
   text-decoration: none; }
 
+@media (min-width: 1100px) {
+  .container {
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+    max-width: 1170px;
+    overflow: hidden; } }
+
 .site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
-.masthead_list__items--categorie, .information_recommendation {
+.masthead_list__items--categorie, .information_recommendation, .updates_categorie, .updates_submit, #subscribe_email::placeholder {
   font-family: 'DM Sans';
   font-style: normal;
   font-size: 1rem;
@@ -52,6 +68,15 @@ body * a {
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
+
+.information_header, .updates_heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  margin: 0; }
 
 .site_header {
   background-color: #434CCC;
@@ -137,7 +162,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   opacity: 0.5; }
 
 .site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
-.masthead_list__items--categorie, .information_recommendation {
+.masthead_list__items--categorie, .information_recommendation, .updates_categorie, .updates_submit, #subscribe_email::placeholder {
   font-family: 'DM Sans';
   font-style: normal;
   font-size: 1rem;
@@ -150,6 +175,15 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
+
+.information_header, .updates_heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  margin: 0; }
 
 .masthead {
   padding-block-start: 31px;
@@ -215,7 +249,7 @@ picture {
   color: #000000; }
 
 .site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
-.masthead_list__items--categorie, .information_recommendation {
+.masthead_list__items--categorie, .information_recommendation, .updates_categorie, .updates_submit, #subscribe_email::placeholder {
   font-family: 'DM Sans';
   font-style: normal;
   font-size: 1rem;
@@ -229,16 +263,17 @@ picture {
   line-height: 32px;
   color: #000000; }
 
-.information {
-  padding-block-end: 105px; }
-
-.information_header {
+.information_header, .updates_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   line-height: 48px;
-  color: #000000; }
+  color: #000000;
+  margin: 0; }
+
+.information {
+  padding-block-end: 105px; }
 
 .information_heading {
   margin: 0;
@@ -270,3 +305,71 @@ picture {
 
 .icon_instagram {
   background-image: url("../images/icon_instagram.svg"); }
+
+.site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
+.masthead_list__items--categorie, .information_recommendation, .updates_categorie, .updates_submit, #subscribe_email::placeholder {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 24px; }
+
+.masthead-description, .information_description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: calc(1rem + 2px);
+  line-height: 32px;
+  color: #000000; }
+
+.information_header, .updates_heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+  margin: 0; }
+
+.updates {
+  background-color: #FFDD78;
+  padding-block-start: 63px;
+  padding-block-end: 54px; }
+
+.updates_categorie {
+  letter-spacing: 0.3em;
+  text-transform: uppercase; }
+
+.updates_heading {
+  padding-top: 19px;
+  padding-bottom: 44px; }
+
+.updates_label {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000; }
+
+.updates_submit {
+  background: #434CCC;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  border: none;
+  padding: 13px 45.5px 11px 45.5px; }
+
+#subscribe_email {
+  background: #FFFFFF;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 16px;
+  padding: 13px 11px 16px; }
+
+#subscribe_email::placeholder {
+  color: rgba(0, 0, 0, 0.5); }
