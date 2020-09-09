@@ -13,7 +13,7 @@
 }
 
 .updates_heading {
-  @extend %sub-headings;
+  @include sub-title;
   padding-top: 19px;
   padding-bottom: 44px;
 }
@@ -53,4 +53,33 @@
 #subscribe_email::placeholder {
   @extend %small-font;
   color: rgba(0, 0, 0, 0.5)
+}
+
+@media (min-width: $desktop_min_width) {
+  .updates {
+    padding-block-start: 72px;
+    padding-block-end: 104px;
+  }
+  .updates_heading {
+    @include desk-sub-title;
+  }
+  .updates_container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .header_container {
+    grid-column: 1 / 4;
+  }
+  .form_subscribe {
+    grid-column: 5 / 9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #subscribe_email {
+    margin-top: 12px;
+    margin-block-end: 30px;
+  }
 }
