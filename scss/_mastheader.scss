@@ -2,7 +2,7 @@
 
 .masthead {
   padding-block-start: 31px;
-  padding-block-end: 75px;
+  padding-block-end: 105px;
 }
 
 .previous a {
@@ -80,4 +80,40 @@ picture {
 
 .masthead_list__items--result {
   color: $base-color;
+}
+
+@media (min-width: $desktop_min_width) {
+  .masthead_heading {
+    font-size: 72px;
+    line-height: 80px;
+    max-width: 50%;
+    padding-block-start: 38px;
+    padding-block-end: 61px;
+  }
+  .masthead {
+    padding-block-start: 49px;
+    padding-block-end: 76px;
+  }
+  .masthead_information {
+    padding-block-start: 104px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .masthead_list {
+    row-gap: 0;
+    grid-column: 1 / 5;
+    grid-row: 1 / 5;
+    & br {
+      display: none;
+    }
+  }
+  .information {
+    grid-column: 5 / 9;
+    grid-row: 1 / 7;
+  }
+  .images_sample {
+    padding-block-end: 0px;
+    padding-block-start: 69px;
+  }
 }

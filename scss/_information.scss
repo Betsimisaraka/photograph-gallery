@@ -1,11 +1,11 @@
 @import "variables";
 
 .information {
-  padding-block-end: 105px;
+  padding-block-start: 75px;
 }
 
 .information_header {
-  @extend %sub-headings;
+  @include sub-title;
 }
 
 .information_heading {
@@ -23,4 +23,21 @@
   color: rgba(0, 0, 0, 0.5);
   padding-block-start: 32px;
   padding-block-end: 31px;
+}
+
+@media (min-width: $desktop_min_width) {
+  .information {
+    padding-block-start: 0px;
+  }
+  .information_heading {
+    padding-block-end: 29px;
+    margin-block-start: -16px;
+  }
+  .information_recommendation {
+    padding-block-start: 38px;
+    padding-block-end: 55px;
+  }
+  .information_header {
+    @include desk-sub-title;
+  }
 }
