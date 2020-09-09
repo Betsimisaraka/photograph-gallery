@@ -26,15 +26,6 @@
   line-height: 32px;
   color: #000000; }
 
-.information_header {
-  font-family: 'DM Serif Display';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 48px;
-  color: #000000;
-  margin: 0; }
-
 html {
   font-family: "DM Sans", Arial, Helvetica, sans-serif; }
 
@@ -94,15 +85,6 @@ body * a {
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
-
-.information_header {
-  font-family: 'DM Serif Display';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 48px;
-  color: #000000;
-  margin: 0; }
 
 .site_header {
   background-color: #434CCC;
@@ -215,18 +197,9 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   line-height: 32px;
   color: #000000; }
 
-.information_header {
-  font-family: 'DM Serif Display';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 48px;
-  color: #000000;
-  margin: 0; }
-
 .masthead {
   padding-block-start: 31px;
-  padding-block-end: 75px; }
+  padding-block-end: 105px; }
 
 .previous a {
   font-weight: normal;
@@ -287,6 +260,34 @@ picture {
 .masthead_list__items--result {
   color: #000000; }
 
+@media (min-width: 1200px) {
+  .masthead_heading {
+    font-size: 72px;
+    line-height: 80px;
+    max-width: 50%;
+    padding-block-start: 38px;
+    padding-block-end: 61px; }
+  .masthead {
+    padding-block-start: 49px;
+    padding-block-end: 76px; }
+  .masthead_information {
+    padding-block-start: 104px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr); }
+  .masthead_list {
+    row-gap: 0;
+    grid-column: 1 / 5;
+    grid-row: 1 / 5; }
+    .masthead_list br {
+      display: none; }
+  .information {
+    grid-column: 5 / 9;
+    grid-row: 1 / 7; }
+  .images_sample {
+    padding-block-end: 0px;
+    padding-block-start: 69px; } }
+
 .footer_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
@@ -315,6 +316,9 @@ picture {
   line-height: 32px;
   color: #000000; }
 
+.information {
+  padding-block-start: 75px; }
+
 .information_header {
   font-family: 'DM Serif Display';
   font-style: normal;
@@ -323,9 +327,6 @@ picture {
   line-height: 48px;
   color: #000000;
   margin: 0; }
-
-.information {
-  padding-block-end: 105px; }
 
 .information_heading {
   margin: 0;
@@ -336,6 +337,23 @@ picture {
   color: rgba(0, 0, 0, 0.5);
   padding-block-start: 32px;
   padding-block-end: 31px; }
+
+@media (min-width: 1200px) {
+  .information {
+    padding-block-start: 0px; }
+  .information_heading {
+    padding-block-end: 29px;
+    margin-block-start: -16px; }
+  .information_recommendation {
+    padding-block-start: 38px;
+    padding-block-end: 55px; }
+  .information_header {
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 64px;
+    color: #000000; } }
 
 .social_links {
   display: flex;
@@ -385,15 +403,6 @@ picture {
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
-
-.information_header {
-  font-family: 'DM Serif Display';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 48px;
-  color: #000000;
-  margin: 0; }
 
 .updates {
   background-color: #FFDD78;
@@ -499,15 +508,6 @@ picture {
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
-
-.information_header {
-  font-family: 'DM Serif Display';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 48px;
-  color: #000000;
-  margin: 0; }
 
 .footer {
   background-color: #FFFFFF; }
