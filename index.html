@@ -102,19 +102,19 @@
       </div>
     </article>
     <article class="updates">
-      <div class="container">
-        <p class="updates_categorie">Latest</p>
-        <header class="upadates_header">
-          <h3 class="updates_heading">Stay up-to-date with my updates</h3>
-        </header>
+      <div class="container updates_container">
+        <div class="header_container">
+          <p class="updates_categorie">Latest</p>
+          <header class="upadates_header">
+            <h3 class="updates_heading">Stay up-to-date with my updates</h3>
+          </header>
+        </div>
         <form class="form_subscribe" action="/subscribe" mehtod="POST">
           <div class="form_row">
             <label for="subscribe_email" class="updates_label">Your email address</label>
-            <div class="form_field">
-              <input type="email" name="email" id="subscribe_email" placeholder="e.g. jesse@gmail.com" required>
-            </div>
+            <input type="email" name="email" id="subscribe_email" placeholder="e.g. jesse@gmail.com" required>
           </div>
-          <div class="form_row form_actions">
+          <div class="form_actions">
             <button class="updates_submit" type="submit">Subscribe</button>
           </div>
         </form>
