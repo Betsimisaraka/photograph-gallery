@@ -4,11 +4,8 @@
   padding-block-start: 75px;
 }
 
-.information_header {
-  @include sub-title;
-}
-
 .information_heading {
+  @include sub-title;
   margin: 0;
   padding-block-end: 31px;
 } 
@@ -30,14 +27,12 @@
     padding-block-start: 0px;
   }
   .information_heading {
+    @include desk-sub-title;
     padding-block-end: 29px;
     margin-block-start: -16px;
   }
   .information_recommendation {
     padding-block-start: 38px;
     padding-block-end: 55px;
-  }
-  .information_header {
-    @include desk-sub-title;
   }
 }

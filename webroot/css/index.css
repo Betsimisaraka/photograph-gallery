@@ -358,16 +358,14 @@ picture {
 .information {
   padding-block-start: 75px; }
 
-.information_header {
+.information_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
   line-height: 48px;
   color: #000000;
-  margin: 0; }
-
-.information_heading {
+  margin: 0;
   margin: 0;
   padding-block-end: 31px; }
 
@@ -381,18 +379,17 @@ picture {
   .information {
     padding-block-start: 0px; }
   .information_heading {
-    padding-block-end: 29px;
-    margin-block-start: -16px; }
-  .information_recommendation {
-    padding-block-start: 38px;
-    padding-block-end: 55px; }
-  .information_header {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: normal;
     font-size: 52px;
     line-height: 64px;
-    color: #000000; } }
+    color: #000000;
+    padding-block-end: 29px;
+    margin-block-start: -16px; }
+  .information_recommendation {
+    padding-block-start: 38px;
+    padding-block-end: 55px; } }
 
 .social_links {
   display: flex;
