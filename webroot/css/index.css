@@ -396,7 +396,8 @@ picture {
 
 .social_links {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-inline-start: -0.5rem; }
 
 .icon {
   background-repeat: no-repeat;
