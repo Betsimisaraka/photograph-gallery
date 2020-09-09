@@ -30,6 +30,5 @@ body * a {
 @media (min-width: $desktop_min_width) {
   .container {
     @include container-desk;
-    overflow: hidden;
   }
 }
