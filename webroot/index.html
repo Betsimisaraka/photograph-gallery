@@ -5,9 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&display=swap"
-    rel="stylesheet"> -->
   <title>Portfolio detail</title>
 </head>
 
@@ -43,10 +40,12 @@
           All my photographs try to capture that perspective, however subtle.
         </p>
         <figure class="images_sample">
-          <picture class="image_1">
-            <source media="(min-width: 1170px)" srcset="./images/rock_carvings_lg.jpg">
-            <img src="./images/rock_carvings_md.jpg" alt="Rock carvings image">
-          </picture>
+          <div class="show_images">
+            <picture class="image_1">
+              <source media="(min-width: 1170px)" srcset="./images/rock_carvings_lg.jpg">
+              <img src="./images/rock_carvings_md.jpg" alt="Rock carvings image">
+            </picture>
+          </div>
           <ul class="images_container">
             <li><img src="./images/rock_carvings_sm.jpg" alt="Rock carvings image"></li>
             <li><img src="./images/stairs_sm.jpg" alt="Stairs"></li>
@@ -138,28 +137,28 @@
           </ul>
         </div>
         <!-- <div class="footer_images__container"> -->
-          <ul class="footer_images__lists">
-            <li class="footer_woman__images">
-              <picture>
-                <source media="(min-width: 1170px)" srcset="./images/woman_sm.jpg">
-                <img src="./images/woman_xs.jpg" alt="woman">
-              </picture>
-              <div class="photos">
-                <p class="image_name">Rust, pumpkin, tans, and spices.</p>
-                <p class="image_date">July 15, 2019</p>
-              </div>
-            </li>
-            <li class="footer_passage__images">
-              <picture>
-                <source media="(min-width: 1170px)" srcset="./images/passage_sm.jpg">
-                <img src="./images/passage_xs.jpg" alt="passage">
-              </picture>
-              <div class="photos">
-                <p class="image_name">Experiencing Japan</p>
-                <p class="image_date">July 10, 2019</p>
-              </div>
-            </li>
-          </ul>
+        <ul class="footer_images__lists">
+          <li class="footer_woman__images">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="./images/woman_sm.jpg">
+              <img src="./images/woman_xs.jpg" alt="woman">
+            </picture>
+            <div class="photos">
+              <p class="image_name">Rust, pumpkin, tans, and spices.</p>
+              <p class="image_date">July 15, 2019</p>
+            </div>
+          </li>
+          <li class="footer_passage__images">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="./images/passage_sm.jpg">
+              <img src="./images/passage_xs.jpg" alt="passage">
+            </picture>
+            <div class="photos">
+              <p class="image_name">Experiencing Japan</p>
+              <p class="image_date">July 10, 2019</p>
+            </div>
+          </li>
+        </ul>
         <!-- </div> -->
       </div>
       <div class="footer_creater">
@@ -168,6 +167,7 @@
       </div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
