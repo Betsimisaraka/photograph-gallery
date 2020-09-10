@@ -4,3 +4,7 @@ $desktop_min_width: $faux_column_width + 30px;
 @function image($filename) {
   @return url("../images/#{$filename}");
 }
+
+// @function svg-fill($color) {
+//   @return str-replace('<svg', '<svg fill="#{$color}"');
+// }

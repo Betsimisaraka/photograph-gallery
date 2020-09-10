@@ -24,3 +24,15 @@
 .icon_instagram {
   background-image: image("icon_instagram.svg");
 }
+
+.icon_facebook:hover {
+  filter: invert(90%) sepia(50%) saturate(1352%) hue-rotate(80deg) brightness(100%) contrast(100%);
+}
+
+.icon_twitter:hover {
+  filter: invert(50%) sepia(50%) saturate(1352%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
+.icon_instagram:hover {
+  filter: invert(90%) sepia(50%) saturate(1352%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
