@@ -13,8 +13,8 @@
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 32px;
+  font-size: calc((var(--base-font-size) * 0.5rem));
+  line-height: calc((var(--base-line-height) + 8px));
   text-transform: uppercase;
   margin: 0;
 }
@@ -26,8 +26,8 @@
 @mixin small-fonts {
   font-family: 'DM Sans';
   font-style: normal;
-  font-size: $default-font-size;
-  line-height: $base-line-height;
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
 }
 
 %small-font {
@@ -38,7 +38,7 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: calc((var(--base-font-size) - 4rem));
   color: $base-color;
 }
 

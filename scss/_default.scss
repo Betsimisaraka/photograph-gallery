@@ -1,17 +1,17 @@
 html {
   font-family: $font-stack;
-  font-size: $default-font-size;
+  font-size: var(--base-font-size);
 }
 
 body {
-  background-color: $body-background-color;
+  background-color: var(--body-background);
   margin: 0;
   padding: 0;
 }
 
 .container {
-  margin-inline-start: 14px;
-  margin-inline-end: 15px;
+  margin-inline-start: calc((var(--base-margin) - 2px));
+  margin-inline-end: calc((var(--base-margin) - 1px));
 }
 
 figure,
