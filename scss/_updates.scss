@@ -21,8 +21,8 @@
 .updates_label {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 0.75rem;
   line-height: 16px;
   text-transform: uppercase;
   color: $base-color;
@@ -32,7 +32,7 @@
   background: #434CCC;
   border-radius: 5px;
   @extend %small-font;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   color: $bg-heading-color;
   border: none;
