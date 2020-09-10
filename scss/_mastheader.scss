@@ -7,7 +7,7 @@
 
 .previous a {
   @extend %small-font;
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -24,8 +24,8 @@
 .masthead_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 52px;
+  font-weight: 400;
+  font-size: 3.25rem;
   line-height: 64px;
   color: $base-color;
   margin: 0;
@@ -95,7 +95,7 @@
 .masthead_list__items--result,
 .masthead_list__items--categorie {
   @extend %small-font;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
@@ -111,7 +111,7 @@
 
 @media (min-width: $desktop_min_width) {
   .masthead_heading {
-    font-size: 72px;
+    font-size: 4.5rem;
     line-height: 80px;
     max-width: 50%;
     padding-block-start: 38px;

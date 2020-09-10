@@ -29,19 +29,19 @@
 .footer_creater_modifier,
 .footer_creater_copyright {
   @extend %small-font;
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .active {
   @extend %small-font;
-  font-weight: bold;
+  font-weight: 700;
   color: $base-color;
 }
 
 .footer__list--link:hover {
   color: $base-color;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer_list--items-active {

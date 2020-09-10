@@ -12,8 +12,8 @@
 @mixin bg-header {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 32px;
   text-transform: uppercase;
   margin: 0;
@@ -37,15 +37,15 @@
 @mixin smallest-font {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 0.75rem;
   color: $base-color;
 }
 
 @mixin description {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: calc(#{$default-font-size} + 2px);
   line-height: 32px;
   color: $base-color;
@@ -64,8 +64,8 @@
 @mixin sub-title {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 2.5rem;
   line-height: 48px;
   color: $base-color;
   margin: 0;
@@ -78,8 +78,8 @@
 @mixin desk-sub-title {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 52px;
+  font-weight: 400;
+  font-size: 3.25rem;
   line-height: 64px;
   color: $base-color;
 }

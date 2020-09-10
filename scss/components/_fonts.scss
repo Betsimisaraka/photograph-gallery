@@ -5,3 +5,29 @@ $font-stack:
   $callback-font;
 $default-font-size: 1rem;
 $base-line-height: 24px;
+
+$font-faces: 
+    (
+       name: 'DM Serif Display Regular',
+       family: 'DM Serif Display',
+       system-name: 'Dm-Serif-Display-Regular',
+       filename: 'dm-serif-display-regular',
+       style: 'normal',
+       weight: 400,
+    ),
+    (
+       name: 'DM Sans Bold',
+       family: 'DM Sans',
+       system-name: 'DM-Sans-Bold',
+       filename: 'dm-sans-bold',
+       style: 'normal',
+       weight: 700,
+    ),
+    (
+      name: 'DM Sans Regular',
+      family: 'DM Sans',
+      system-name: 'DM-Sans-Regular',
+      filename: 'dm-sans-regular',
+      style: 'normal',
+      weight: 400,
+    );
