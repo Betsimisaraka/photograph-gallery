@@ -353,7 +353,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   .images_container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    column-gap: 11px; }
+    column-gap: 11px;
+    height: unset; }
   .images_container li:nth-child(2) {
     grid-column: 2 / 3; }
   .images_container li:nth-child(4),
@@ -367,7 +368,17 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
     flex-direction: column; }
     .images_sample .images_container li img {
       width: 137px;
-      height: 85px; } }
+      height: 85px; }
+    .images_sample .images_container li:not(:nth-child(1)) img {
+      opacity: 0.5; }
+  .images_sample .images_container li:nth-child(1),
+  .images_sample .images_container li:nth-child(2) {
+    grid-column: unset; }
+  .images_sample .images_container li:nth-child(3) {
+    grid-column: unset;
+    position: relative; }
+  .images_sample .images_container li:nth-child(3) img {
+    border-radius: 5px; } }
 
 .footer_heading {
   font-family: 'DM Serif Display';
