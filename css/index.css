@@ -1,8 +1,8 @@
 .footer_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 32px;
   text-transform: uppercase;
   margin: 0; }
@@ -21,13 +21,60 @@
 .masthead-description, .information_description {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
+  font-size: calc(1rem + 2px);
+  line-height: 32px;
+  color: #000000; }
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: local("DM Serif Display Regular"), local("Dm-Serif-Display-Regular"), url("../fonts/dm-serif-display-regular.woff2") format("woff2"), url("../fonts/dm-serif-display-regular.woff") format("woff");
+  font-style: "normal";
+  font-weight: 400; }
+
+@font-face {
+  font-family: "DM Sans";
+  src: local("DM Sans Bold"), local("DM-Sans-Bold"), url("../fonts/dm-sans-bold.woff2") format("woff2"), url("../fonts/dm-sans-bold.woff") format("woff");
+  font-style: "normal";
+  font-weight: 700; }
+
+@font-face {
+  font-family: "DM Sans";
+  src: local("DM Sans Regular"), local("DM-Sans-Regular"), url("../fonts/dm-sans-regular.woff2") format("woff2"), url("../fonts/dm-sans-regular.woff") format("woff");
+  font-style: "normal";
+  font-weight: 400; }
+
+.footer_heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin: 0; }
+
+.site_header__lists .site_header__list--items .site_header__list--link, .previous a, .masthead_list__items--result,
+.masthead_list__items--categorie, .information_recommendation, .updates_categorie, .updates_submit, #subscribe_email::placeholder, .footer_presentation,
+.footer__list--link,
+.image_name,
+.footer_creater_modifier,
+.footer_creater_copyright, .active {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 24px; }
+
+.masthead-description, .information_description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
 
 html {
-  font-family: "DM Sans", Arial, Helvetica, sans-serif; }
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 1rem; }
 
 body {
   background-color: rgba(67, 76, 204, 0.05);
@@ -60,8 +107,8 @@ body * a {
 .footer_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 32px;
   text-transform: uppercase;
   margin: 0; }
@@ -80,7 +127,7 @@ body * a {
 .masthead-description, .information_description {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
@@ -98,8 +145,8 @@ body * a {
 .site_header__heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 32px;
   text-transform: uppercase;
   margin: 0;
@@ -159,7 +206,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
     padding-block-start: 1rem; }
 
 .site_header__lists .site_header__list--items .site_header__list--link {
-  font-weight: bold;
+  font-weight: 700;
   color: #FFFFFF; }
 
 .site_header__lists .site_header__list--items .active,
@@ -171,8 +218,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   .site_header__heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
+    font-weight: 400;
+    font-size: 2.5rem;
     line-height: 48px;
     color: #FFFFFF; }
   .site_header__container {
@@ -202,7 +249,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   .site_header__lists {
     flex-direction: row; }
     .site_header__lists .site_header__list--items + .site_header__list--items {
-      padding-block-start: 0rem;
+      padding-block-start: 0px;
       margin-inline-start: 64px; }
   .label_menu {
     display: none; } }
@@ -210,8 +257,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .footer_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 32px;
   text-transform: uppercase;
   margin: 0; }
@@ -230,7 +277,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .masthead-description, .information_description {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
@@ -240,7 +287,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   padding-block-end: 105px; }
 
 .previous a {
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.5); }
 
 .previous a::before {
@@ -255,8 +302,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .masthead_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 52px;
+  font-weight: 400;
+  font-size: 3.25rem;
   line-height: 64px;
   color: #000000;
   margin: 0;
@@ -313,7 +360,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 
 .masthead_list__items--result,
 .masthead_list__items--categorie {
-  font-weight: bold; }
+  font-weight: 700; }
 
 .masthead_list__items--categorie {
   color: rgba(0, 0, 0, 0.5);
@@ -325,7 +372,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 
 @media (min-width: 1200px) {
   .masthead_heading {
-    font-size: 72px;
+    font-size: 4.5rem;
     line-height: 80px;
     max-width: 50%;
     padding-block-start: 38px;
@@ -383,8 +430,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .footer_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 32px;
   text-transform: uppercase;
   margin: 0; }
@@ -403,7 +450,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .masthead-description, .information_description {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
@@ -414,8 +461,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .information_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 2.5rem;
   line-height: 48px;
   color: #000000;
   margin: 0;
@@ -423,7 +470,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   padding-block-end: 31px; }
 
 .information_recommendation {
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
   padding-block-start: 32px;
   padding-block-end: 31px; }
@@ -434,8 +481,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   .information_heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: normal;
-    font-size: 52px;
+    font-weight: 400;
+    font-size: 3.25rem;
     line-height: 64px;
     color: #000000;
     padding-block-end: 29px;
@@ -478,8 +525,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .footer_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 32px;
   text-transform: uppercase;
   margin: 0; }
@@ -498,7 +545,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .masthead-description, .information_description {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
@@ -515,8 +562,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .updates_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
+  font-weight: 400;
+  font-size: 2.5rem;
   line-height: 48px;
   color: #000000;
   margin: 0;
@@ -561,8 +608,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   .updates_heading {
     font-family: 'DM Serif Display';
     font-style: normal;
-    font-weight: normal;
-    font-size: 52px;
+    font-weight: 400;
+    font-size: 3.25rem;
     line-height: 64px;
     color: #000000; }
   .updates_container {
@@ -583,8 +630,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .footer_heading {
   font-family: 'DM Serif Display';
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: 1.5rem;
   line-height: 32px;
   text-transform: uppercase;
   margin: 0; }
@@ -603,7 +650,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .masthead-description, .information_description {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: calc(1rem + 2px);
   line-height: 32px;
   color: #000000; }
@@ -632,16 +679,16 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .image_name,
 .footer_creater_modifier,
 .footer_creater_copyright {
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.5); }
 
 .active {
-  font-weight: bold;
+  font-weight: 700;
   color: #000000; }
 
 .footer__list--link:hover {
   color: #000000;
-  font-weight: bold; }
+  font-weight: 700; }
 
 .footer_list--items-active {
   padding-bottom: 16px; }
@@ -652,8 +699,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .image_date {
   font-family: 'DM Sans';
   font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
+  font-weight: 700;
+  font-size: 0.75rem;
   color: #000000;
   line-height: 24px; }
 
