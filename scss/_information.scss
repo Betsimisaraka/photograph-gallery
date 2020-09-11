@@ -1,13 +1,13 @@
 @import "variables";
 
 .information {
-  padding-block-start: 75px;
+  padding-top: calc(var(--base-padding) + 25px);
 }
 
 .information_heading {
   @include sub-title;
   margin: 0;
-  padding-block-end: 31px;
+  padding-bottom: calc(var(--base-padding) - 19px);
 } 
 
 .information_description {
@@ -18,21 +18,21 @@
   @extend %small-font;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.5);
-  padding-block-start: 32px;
-  padding-block-end: 31px;
+  padding-top: calc(var(--base-padding) - 18px);
+  padding-bottom: calc(var(--base-padding) - 19px);
 }
 
 @media (min-width: $desktop_min_width) {
   .information {
-    padding-block-start: 0px;
+    padding-top: 0px;
   }
   .information_heading {
     @include desk-sub-title;
-    padding-block-end: 29px;
-    margin-block-start: -16px;
+    padding-bottom: calc(var(--base-padding) - 21px);
+    margin-top: -16px;
   }
   .information_recommendation {
-    padding-block-start: 38px;
-    padding-block-end: 55px;
+    padding-top: calc(var(--base-padding) - 12px);
+    padding-bottom: calc(var(--base-padding) + 5px);
   }
 }

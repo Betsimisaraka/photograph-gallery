@@ -1,8 +1,8 @@
 @import "variables";
 
 .masthead {
-  padding-block-start: 31px;
-  padding-block-end: 105px;
+  padding-top: 31px calc(var(--base-padding) - 19px);
+  padding-bottom: 105px calc((var(--base-padding) * 2) + 5px);
 }
 
 .previous a {
@@ -16,21 +16,16 @@
   background-image: image("icon_arrow_left.svg");
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: 1rem;
-  padding-inline-start: 1rem;
-  padding-inline-end: 1rem;
+  background-size: var(--base-margin);
+  padding-left: calc(var(--base-padding) - 34px);
+  padding-right: calc(var(--base-padding) - 34px);
 }
 
 .masthead_heading {
-  font-family: 'DM Serif Display';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3.25rem;
-  line-height: 64px;
-  color: $base-color;
+  @include desk-sub-title;
   margin: 0;
-  padding-block-start: 69px;
-  padding-block-end: 65px;
+  padding-top: calc(var(--base-padding) + 19px);
+  padding-bottom: calc(var(--base-padding) + 15px);
 }
 
 .masthead-description {
@@ -38,8 +33,8 @@
 }
 
 .images_sample {
-  padding-block-start: 82px;
-  padding-block-end: 92px;
+  padding-top: calc(var(--base-padding) + 32px);
+  padding-bottom: calc(var(--base-padding) + 42px);
 }
 
 .images_container li:nth-child(4),
@@ -100,29 +95,29 @@
 
 
 .masthead_list__items--categorie {
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--opacity-color);
   margin: 0;
-  padding-block-end: 8px;
+  padding-bottom: 8px;
 }
 
 .masthead_list__items--result {
-  color: $base-color;
+  color: var(--sub-heading-color);
 }
 
 @media (min-width: $desktop_min_width) {
   .masthead_heading {
-    font-size: 4.5rem;
-    line-height: 80px;
+    font-size: calc((var(--base-font-size) * 4.5));
+    line-height: calc((var(--base-line-height) * 3 ) + 8px);
     max-width: 50%;
-    padding-block-start: 38px;
-    padding-block-end: 61px;
+    padding-top: calc(var(--base-padding) - 12px);
+    padding-bottom: calc(var(--base-padding) + 11px);
   }
   .masthead {
-    padding-block-start: 49px;
-    padding-block-end: 76px;
+    padding-top: calc(var(--base-padding) - 1px);
+    padding-bottom: calc(var(--base-padding) + 26px);
   }
   .masthead_information {
-    padding-block-start: 104px;
+    padding-top: calc((var(--base-padding) * 2) + 4px);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -140,8 +135,8 @@
     grid-row: 1 / 7;
   }
   .images_sample {
-    padding-block-end: 0px;
-    padding-block-start: 69px;
+    padding-bottom: 0px;
+    padding-top: calc(var(--base-padding) + 19px);
   }
   .images_container {
     display: grid;

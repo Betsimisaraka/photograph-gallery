@@ -2,8 +2,8 @@
 
 .updates {
   background-color: $updates-color;
-  padding-block-start: 63px;
-  padding-block-end: 54px;
+  padding-top: calc(var(--base-padding) + 13px);
+  padding-bottom: calc(var(--base-padding) + 4px);
 }
 
 .updates_categorie {
@@ -14,8 +14,8 @@
 
 .updates_heading {
   @include sub-title;
-  padding-top: 19px;
-  padding-bottom: 44px;
+  padding-top: calc(var(--base-padding) -31px);
+  padding-bottom: calc(var(--base-padding) - 6px);
 }
 
 .updates_label {
@@ -23,9 +23,9 @@
   font-style: normal;
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 16px;
+  line-height: 16px calc(var(--base-line-height) - 8px);
   text-transform: uppercase;
-  color: $base-color;
+  color: var(--sub-heading-color);
 }
 
 .updates_submit {
@@ -34,19 +34,19 @@
   @extend %small-font;
   font-weight: 700;
   text-align: center;
-  color: $bg-heading-color;
+  color:var(--bg-heading-color);
   border: none;
   padding: 13px 45.5px 11px 45.5px;
 }
 
 #subscribe_email {
-  background: $bg-heading-color;
+  background:var(--bg-heading-color);
   border: 1px solid #DADADA;
   box-sizing: border-box;
   border-radius: 5px;
   width: 100%;
-  margin-top: 12px;
-  margin-bottom: 16px;
+  margin-top: calc(var(--base-margin) - 4px);
+  margin-bottom: var(--base-margin);
   padding: 13px 11px 16px;
 }
 
@@ -57,8 +57,8 @@
 
 @media (min-width: $desktop_min_width) {
   .updates {
-    padding-block-start: 72px;
-    padding-block-end: 104px;
+    padding-top: calc(var(--base-padding) + 22px);
+    padding-bottom: calc((var(--base-padding) * 2) + 4px);
   }
   .updates_heading {
     @include desk-sub-title;
@@ -79,7 +79,7 @@
   }
   
   #subscribe_email {
-    margin-top: 12px;
-    margin-block-end: 30px;
+    margin-top: calc(var(--base-margin) - 4px);
+    margin-bottom: calc(var(--base-margin) + 14px);
   }
 }

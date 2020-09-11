@@ -1,19 +1,19 @@
 @import "variables";
 
 .site_header {
-  background-color: $site-header-background-color;
+  background-color: var(--site-header-background);
   position: relative;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
+  padding-top: calc(var(--base-padding) - 34px);
+  padding-bottom: calc(var(--base-padding) - 34px);
 }
 
 .site_header__heading {
   @include bg-header;
-  color:$bg-heading-color;
+  color: var(--bg-heading-color);
 }
 
 input[type="checkbox"] {
@@ -33,13 +33,13 @@ input[type="checkbox"] {
   height: 14px;
   background-image: image("icon_menu.svg");
   background-repeat: no-repeat;
-  background-size: 1rem;
+  background-size: var(--base-font-size);
   top: 40%;
   left: 92%;
 }
 
 .site_header__navigation {
-    padding: 2rem;
+    padding: calc(var(--base-padding) - 18px);
     background-color: lightslategray;
     position: absolute;
     z-index: 2;
@@ -68,39 +68,30 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 }
 
 .site_header__lists {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flex-column;
   &  .site_header__list--items +  .site_header__list--items {
-    padding-block-start: 1rem;
+    padding-top: calc(var(--base-padding) - 34px);
   }
 }
 
 .site_header__lists .site_header__list--items .site_header__list--link {
   @extend %small-font;
   font-weight: 700;
-  color: $bg-heading-color;
+  color: var(--bg-heading-color);
 }
 
 .site_header__lists .site_header__list--items .active,
 .site_header__lists .site_header__list--link:hover {
-  color: black;
-  opacity: 0.5;
+  color: var(--opacity-color);
 }
 
 @media (min-width: $desktop_min_width) {
   .site_header__heading {
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.5rem;
-    line-height: 48px;
-    color: $bg-heading-color;;
+    @include sub-title;
+    color: var(--bg-heading-color);
   }
   .site_header__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex-row;
   }
   .site_header__navigation {
     padding: 0;
@@ -118,18 +109,17 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
     align-self: center;
   }
   .site_header__lists .site_header__list--items .active {
-    color: #ffffff;
+    color: var(--bg-heading-color);
     opacity: 1;
   }
   .site_header__lists .site_header__list--items .active:hover {
-    color: black;
-    opacity: 0.5;
+    color: var(--opacity-color);
   }
   .site_header__lists {
     flex-direction: row;
-    &  .site_header__list--items +  .site_header__list--items {
-      padding-block-start: 0px;
-      margin-inline-start: 64px;
+    &  .site_header__list--items + .site_header__list--items {
+      padding-top: 0px;
+      margin-left: calc(var(--base-margin) * 4);
     }
   }
   .label_menu {

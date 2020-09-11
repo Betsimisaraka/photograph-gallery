@@ -10,8 +10,8 @@ body {
 }
 
 .container {
-  margin-inline-start: calc((var(--base-margin) - 2px));
-  margin-inline-end: calc((var(--base-margin) - 1px));
+  margin-left: calc((var(--base-margin) - 2px));
+  margin-right: calc((var(--base-margin) - 1px));
 }
 
 figure,

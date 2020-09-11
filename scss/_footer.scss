@@ -45,7 +45,7 @@
 }
 
 .footer_list--items-active {
-  padding-bottom: 16px;
+  padding-bottom: calc(var(--base-padding) - 34px);
 }
 
 .footer__lists li + li {
@@ -57,8 +57,8 @@
 }
 
 .footer_presentation {
-  padding-top: 23px;
-  padding-bottom: 23px;
+  padding-top: calc(var(--base-padding) - 27px);
+  padding-bottom: calc(var(--base-padding) - 27px);
 }
 
 .footer_personal__info {
@@ -137,13 +137,12 @@
   }
   .footer_images__lists li picture img {
     width: calc(100% - 100px);
-    height: calc(50vh - 100px);
   }
   .footer_woman__images,
   .footer_passage__images {
     column-gap: unset;
   }
   .footer_images__lists li .photos {
-    margin-inline-start: -3rem;
+    margin-left: -3rem;
   }
 }
