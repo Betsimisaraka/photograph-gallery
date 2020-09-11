@@ -1,20 +1,10 @@
 const images = Array.from(document.querySelectorAll('.image_onclick'));
 const openImage = document.querySelector('.show_images');
 
-function open() {
-  openImage.classList.add('open');
-}
-
-function showImages(el) {
-  console.log(el);
-  if (!el) {
-    console.info('No image to show');
-    return;
-  }
-  openImage.querySelector('.image_changes').src = el.src;
-  openImage.querySelector('source').srcset = el.srcset;
-  currentImage = el;
-  open();
+function showImages(element) {
+  openImage.querySelector('.image_changes').src = element.src;
+  openImage.querySelector('source').srcset = element.srcset;
+  currentImage = element;
 }
 
 images.forEach(image => {

@@ -1,8 +1,8 @@
 @import "variables";
 
 .masthead {
-  padding-top: 31px calc(var(--base-padding) - 19px);
-  padding-bottom: 105px calc((var(--base-padding) * 2) + 5px);
+  padding-top: calc(var(--base-padding) - 19px);
+  padding-bottom: calc((var(--base-padding) * 2) + 5px);
 }
 
 .previous a {
