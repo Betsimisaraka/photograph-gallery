@@ -2,7 +2,7 @@
 
 .footer {
   position: relative;
-  background-color: $bg-heading-color;
+  background-color: var(--bg-heading-color);
 }
 
 .footer::after {
@@ -14,13 +14,13 @@
   right: 0%;
   top: 88%;
   bottom: 0%;
-  background: $base-color;
+  background: var(--sub-heading-color);
   opacity: 0.1;
 }
 
 .footer_heading {
   @extend %big-headeing;
-  color: $base-color;
+  color:  var(--sub-heading-color);
 }
 
 .footer_presentation,
@@ -30,17 +30,17 @@
 .footer_creater_copyright {
   @extend %small-font;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--opacity-color);
 }
 
 .active {
   @extend %small-font;
   font-weight: 700;
-  color: $base-color;
+  color:  var(--sub-heading-color);
 }
 
 .footer__list--link:hover {
-  color: $base-color;
+  color:  var(--sub-heading-color);
   font-weight: 700;
 }
 
@@ -54,7 +54,6 @@
 
 .image_date {
   @include smallest-font;
-  line-height: $base-line-height;
 }
 
 .footer_presentation {
@@ -63,13 +62,8 @@
 }
 
 .footer_personal__info {
-  padding-top: 76px;
-  padding-bottom: 79px;
-}
-
-.footer_images__container {
-  padding-top: 78px;
-  padding-bottom: 70px;
+  padding-top: calc(var(--base-padding) + 26px);
+  padding-bottom: calc(var(--base-padding) + 29px);
 }
 
 .footer_woman__images,
@@ -87,8 +81,8 @@
 }
 
 .footer_images__lists {
-  padding-top: 78px;
-  padding-bottom: 70px;
+  padding-top: calc(var(--base-padding) + 28px);
+  padding-bottom: calc(var(--base-padding) + 20px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
@@ -104,8 +98,8 @@
 }
 
 .footer_creater {
-  padding-top: 27px;
-  padding-bottom: 29px;
+  padding-top: calc(var(--base-padding) - 23px);
+  padding-bottom: calc(var(--base-padding) - 21px);
   & p + p {
     padding-top: 8px;
   }
@@ -113,10 +107,8 @@
 
 @media (min-width: $desktop_min_width) {
   .footer_creater {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 75px;
+    @include flex-row;
+    padding-bottom: calc(var(--base-padding) + 25px);
     & p + p {
       padding-top: 0px;
     }
@@ -131,15 +123,15 @@
     grid-template-columns: repeat(8, 1fr);
   }
   .footer_personal__info {
-    padding-top: 72px;
+    padding-top: calc(var(--base-padding) + 22px);
     grid-column: 1 / 3;
   }
   .footer_lists__container {
-    padding-top: 79px;
+    padding-top: calc(var(--base-padding) + 29px);
     grid-column: 4 / 5;
   }
   .footer_images__lists {
-    padding-top: 78px;
+    padding-top: calc(var(--base-padding) + 28px);
     grid-column: 6 / 9;
     row-gap: 39px;
   }

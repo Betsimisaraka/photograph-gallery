@@ -9,11 +9,17 @@
   text-indent: -9999px;
 }
 
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 @mixin bg-header {
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: 400;
-  font-size: calc((var(--base-font-size) * 0.5rem));
+  font-size: calc((var(--base-font-size) * 1.5));
   line-height: calc((var(--base-line-height) + 8px));
   text-transform: uppercase;
   margin: 0;
@@ -38,17 +44,18 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: calc((var(--base-font-size) - 4rem));
-  color: $base-color;
+  font-size: calc((var(--base-font-size) - 2px));
+  line-height: var(--base-line-height);
+  color: var(--sub-heading-color);
 }
 
 @mixin description {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: calc(#{$default-font-size} + 2px);
-  line-height: 32px;
-  color: $base-color;
+  font-size: calc((var(--base-font-size) + 2px));
+  line-height: calc((var(--base-line-height) + 8px));
+  color: var(--sub-heading-color);
 }
 
 %description-paragraph {
@@ -65,9 +72,9 @@
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 48px;
-  color: $base-color;
+  font-size: calc((var(--base-font-size) * 2.5));
+  line-height: calc((var(--base-line-height) * 2));
+  color: var(--sub-heading-color);
   margin: 0;
 }
 
@@ -79,7 +86,7 @@
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: 400;
-  font-size: 3.25rem;
-  line-height: 64px;
+  font-size: calc((var(--base-font-size) * 3.25));
+  line-height: calc((var(--base-line-height) * 2) + 16px);
   color: $base-color;
 }
