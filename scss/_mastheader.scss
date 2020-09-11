@@ -165,6 +165,9 @@
     & .images_container li:not(:nth-child(1)) img {
       opacity: 0.5;
     }
+    & .images_container li:not(:nth-child(1)) img:hover {
+      opacity: 1;
+    }
   }
   .images_sample .images_container li:nth-child(1),
   .images_sample .images_container li:nth-child(2) {

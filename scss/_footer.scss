@@ -75,7 +75,7 @@
 
 .footer_images__lists li picture img {
   object-fit: cover;
-  width: 100%;
+  width: calc((100% - 71px) + 27px);
   height: 100%;
   border-radius: 5px;
 }
@@ -87,6 +87,9 @@
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
   row-gap: 27px;
+  & li .photos {
+    margin-left: -3rem;
+  }
 }
 
 .footer_woman__images {
@@ -136,7 +139,7 @@
     row-gap: 39px;
   }
   .footer_images__lists li picture img {
-    width: calc(100% - 100px);
+    width: calc(100% - (70px + 39px));
   }
   .footer_woman__images,
   .footer_passage__images {
