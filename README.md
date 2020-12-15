@@ -1,26 +1,66 @@
 # Front-end final mockup-to-website project
 
-Hey everyone! 
+<div align="center">
+  <h3>
+    <a href="https://github.com/Betsimisaraka/front-end-finals">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://betsimisaraka.github.io/front-end-finals/">
+      Solution
+    </a>
+  </h3>
+</div>
 
-This will be our final project in the front-end course, so let's make it a good one :)
+In this project we built a website that is about photograph. This webpage shows how beautiful photos are. And it provide some examples of the photographs that the photographer have taken in the deserts of Morroco. This application is made by `html` and `css/sass`
 
-Please fork-and-clone this project as your own repo.
+![MY photograph](./webroot/images/photograph-page.webp)
 
-First things first, let's get you set up. You will need the following…
+## 1- My demo
 
-## Dependencies
+You can see my demo by clicking this github link with the username [Betsimisaraka](https://github.com/Betsimisaraka/front-end-assessment)
 
-- Node.js
-- Figma
-- Figma Font Helper
+## 1- Explaination about the structure of my project.
+This project structures as the folowing instruction below:
 
-## Install
+First, I have a folder called `source-materials` which contains three subfolders that are the `images`, the `fonts` and the `icons`. Inside of these we can see all the necessary fonts, images and icons that are necessary for this project.
 
-We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
+And then, there is a folder called `scss` in which all of my scss files stored.
 
-1. `npm i`
+Lastly `Webroot` folder this is the bigest folder that store the web-files in this application. This contains the `index.html` file, `images` folder which store the images that have been compiled, also `fonts` folder this also contains all of the fonts that have been formated and converted into `woff` and `woff2` and lastly the `css` folder where you can see the output of the `scss` files. I also use a `script` file which has a little bit of javascript to make the image slider work fine.
+
+## 1- My experience
+
+## 1- What have I learned/improved are:
+
+### Built With
+
+-   [Html](https://html.org/)
+-   [Css/Sass](https://css.org)
+
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/Betsimisaraka/front-end-finals
+
+# Install dependencies
+$ Node.js
+$ Figma
+$ Figma Font Helper
+$ npm install node-sass
+$ npm i
+
+# Run css
+$ npm run css:watch
+```
 
 ## Getting started
+
+- Fork this repo to your own github account
+- Clone your github account version of the repo (e.g. `STUDENT_NAME/front-end-finals` ) to your computer.
+- Work in your `main` branch
 
 ### Design
 
@@ -29,41 +69,15 @@ You can find the design:
 - online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1) (Recommended)
 - by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
 
-### Source files
-
-Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work.
-
-2. Install any OTF/TTF fonts found in the `source_materials/fonts` folder in your system, so that you don't get bugged by Figma's Font replacement dialog box.
-
-### Webroot
-
-As with most setups, it's a good idea to isolate all the web-files in the `webroot` folder.
-Export all the images, fonts, HTML, JS, and CSS you use to this webroot folder (in the right subfolder of course!).
-
-3. Create a `webroot/index.html` file.
-
-### Sass
-
-We'll be using the `scss` folder for all our Sass files.
-
-4. Create a `scss/index.scss` file, that will act as our manifest Sass file.
-5. Build your CSS file once by running the `npm run scss` script.
-
-All your Sass files will be output to the `webroot/css` folder.
-
-### Linking up our styles
-
-6. Link up the new `webroot/css/index.css` stylesheet in your `index.html`
-
 ## Development
 
 You'll want to run the `scss:watch` task when you're developing this project.
 
-## Marking & requirements
+## Contact
 
-You have 5 days to convert the design work to a working single webpage. There's a lot to cover here in a week, and we don't expect you to have the entire website done in that time, but it would be great if you could.
+-  GitHub [Betsimisaraka](https://github.com/Betsimisaraka)
 
-So, what is expected then? We're going to be marking most of the things we've learned this year. Here's a list of things we'll be looking at:
+## Fuctionality
 
 - **All the HTML**
   - Your HTML should be clean, accurate, and consistent.
@@ -100,7 +114,3 @@ So, what is expected then? We're going to be marking most of the things we've le
   - Make the menu on mobile work nicely, use your own imagination here.
   - *Bonus points*: Make the Image Slider, and other components work as intended, maybe you'll need some JS?
   - *Bonus points*: Use newer image formats such as WebP and AVIF, while still maintaining support for older formats.
-
-## Ready?
-
-Apply everything you've learend before, do your best, and Good luck! 🤓
