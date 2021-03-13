@@ -18,7 +18,7 @@ In this project we built a website which shows many kind of photos. This webpage
 
 ## 1- My demo
 
-You can see my demo by clicking this github link with the username [Betsimisaraka](https://github.com/Betsimisaraka/front-end-assessment)
+You can see my demo by clicking this github link with the username [Betsimisaraka](https://github.com/Betsimisaraka/front-end-finals)
 
 ## 1- Explaination about the structure of my project.
 This project is structured as the folowing instruction below:
@@ -80,39 +80,19 @@ In this project, I have learned how to compress an image by `paint.net` applicat
 -   [Css/Sass](https://css.org)
 
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) From your command line:
 
 ```bash
 # Clone this repository
 $ git clone https://github.com/Betsimisaraka/front-end-finals
 
 # Install dependencies
-$ Node.js
-$ Figma
-$ Figma Font Helper
 $ npm install node-sass
 $ npm i
 
 # Run css
 $ npm run scss:watch
 ```
-
-## Getting started
-
-- Fork this repo to your own github account
-- Clone your github account version of the repo (e.g. `STUDENT_NAME/front-end-finals` ) to your computer.
-- Work in your `main` branch
-
-### Design
-
-You can find the design:
-
-- online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1) (Recommended)
-- by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
-
-## Development
-
-You'll want to run the `scss:watch` task when you're developing this project.
 
 ## Contact
 
