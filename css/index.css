@@ -232,16 +232,19 @@ body > input[type="checkbox"]:checked ~ .site_header .site_header__navigation {
   transition-delay: .3s;
   transform: none;
   opacity: 1;
-  z-index: 2; }
+  z-index: 1; }
 
 body > input[type="checkbox"]:checked ~ .site_header .label_menu {
+  background-image: url("../images/close-menu.svg");
+  background-position: right;
+  background-size: 2rem;
+  transition-delay: .5s;
   position: absolute;
   z-index: 2;
-  top: 0;
+  top: 20px;
   right: 0;
   bottom: 0;
-  left: -10%;
-  height: 100vh;
+  left: -5%;
   width: 100%; }
 
 .site_header__lists {
