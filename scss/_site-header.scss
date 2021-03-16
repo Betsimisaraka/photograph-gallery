@@ -42,6 +42,7 @@ input[type="checkbox"] {
   top: 40%;
   left: 92%;
   z-index: 3;
+  cursor: pointer;
 }
 
 .site_header__navigation {
@@ -79,6 +80,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   bottom: 0;
   left: -5%;
   width: 100%;
+  cursor: pointer;
 }
 
 .site_header__lists {
