@@ -5,6 +5,7 @@ function showImages(element) {
   openImage.querySelector('.image_changes').src = element.src;
   openImage.querySelector('source').srcset = element.srcset;
   currentImage = element;
+  currentImage.style.opacity = 1;
 }
 
 images.forEach(image => {
