@@ -17,8 +17,12 @@
 }
 
 .site_header__heading {
-  @include bg-header;
-  color: var(--bg-heading-color);
+  margin: 0;
+  padding: 0;
+  & .site_header__heading--link {
+    @include bg-header;
+    color: var(--bg-heading-color);
+  }
 }
 
 input[type="checkbox"] {
@@ -85,6 +89,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 
 .site_header__lists {
   @include flex-column;
+  padding-top: 2rem;
   &  .site_header__list--items +  .site_header__list--items {
     padding-top: calc(var(--base-padding) - 34px);
   }
@@ -103,8 +108,10 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 
 @media (min-width: $desktop_min_width) {
   .site_header__heading {
-    @include sub-title;
-    color: var(--bg-heading-color);
+    & .site_header__heading--link {
+      @include sub-title;
+      color: var(--bg-heading-color);
+    }
   }
   .site_header__container {
     @include flex-row;

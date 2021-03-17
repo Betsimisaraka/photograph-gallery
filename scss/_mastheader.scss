@@ -47,12 +47,6 @@
   display: flex;
   flex-direction: row;
   overflow-x: auto;
-  & li img {
-    opacity: 0.5;
-  }
-  & li img:active {
-    opacity: 1;
-  }
 }
 
 .images_container::-webkit-scrollbar {
@@ -67,6 +61,12 @@
   width: 137px;
   height: 85px;
   border-radius: 5px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.images_container li img.active {
+  opacity: 1;
 }
 
 
