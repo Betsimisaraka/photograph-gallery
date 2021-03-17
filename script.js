@@ -5,9 +5,13 @@ function showImages(element) {
   openImage.querySelector('.image_changes').src = element.src;
   openImage.querySelector('source').srcset = element.srcset;
   currentImage = element;
-  currentImage.style.opacity = 1;
+
 }
 
 images.forEach(image => {
-  image.addEventListener('click', e => showImages(e.currentTarget));
+  image.addEventListener('click', e => {
+    images.forEach(image => image.classList.remove('active'))
+    e.currentTarget.classList.add('active');
+    showImages(e.currentTarget);
+  })
 });
