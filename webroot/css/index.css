@@ -308,7 +308,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   .site_header__lists .site_header__list--items .active:hover {
     color: var(--opacity-color); }
   .site_header__lists {
-    flex-direction: row; }
+    flex-direction: row;
+    padding-top: unset; }
     .site_header__lists .site_header__list--items + .site_header__list--items {
       padding-top: 0px;
       margin-left: calc(var(--base-margin) * 4); }
@@ -547,7 +548,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   background-position: bottom center;
   width: 1.5rem;
   display: block;
-  text-indent: -999px;
+  text-indent: -9999px;
   margin-right: 10px; }
 
 .icon_facebook {

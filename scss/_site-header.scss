@@ -145,6 +145,7 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
   }
   .site_header__lists {
     flex-direction: row;
+    padding-top: unset;
     &  .site_header__list--items + .site_header__list--items {
       padding-top: 0px;
       margin-left: calc(var(--base-margin) * 4);
