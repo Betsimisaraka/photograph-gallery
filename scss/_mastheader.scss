@@ -24,7 +24,7 @@
 .masthead_heading {
   @include desk-sub-title;
   margin: 0;
-  padding-top: calc(var(--base-padding) + 19px);
+  padding-top: calc(var(--base-padding) + 11px);
   padding-bottom: calc(var(--base-padding) + 15px);
 }
 
@@ -106,7 +106,7 @@
     padding-bottom: calc(var(--base-padding) + 26px);
   }
   .masthead_information {
-    padding-top: calc((var(--base-padding) * 2) + 4px);
+    padding-top: calc(var(--base-padding) + 37px);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
