@@ -28,9 +28,9 @@ In this project I built a website which shows many kind of photos. And it provid
 
 ### Built With
 
--   [Html](https://html.org/)
--   [Css](https://css.org)
--   [Sass](https://sass.org)
+-   Html
+-   Css
+-   Sass
 
 
 To clone and run this application, you'll need [Git](https://git-scm.com) From your command line:
