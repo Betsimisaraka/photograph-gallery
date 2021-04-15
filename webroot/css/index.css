@@ -396,7 +396,8 @@ body > input[type="checkbox"]:checked ~ .site_header .label_menu {
 .images_container {
   display: flex;
   flex-direction: row;
-  overflow-x: auto; }
+  overflow-x: auto;
+  justify-content: space-between; }
 
 .images_container::-webkit-scrollbar {
   display: none; }

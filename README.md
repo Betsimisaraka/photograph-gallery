@@ -1,4 +1,4 @@
-# Front-end final
+# Front-end finals
 
 <div align="center">
   <h3>
