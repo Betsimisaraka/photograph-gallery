@@ -12,36 +12,35 @@
   </h3>
 </div>
 
-In this project I built a website which shows many kind of photos. And it provide some examples of the photographs that the photographer has taken in the deserts of Morroco. This application is made with `Html`, `Css` and `Sass`
+In this project, I built a website which shows many kind of photos. And it provide some examples of the photographs that the photographer has taken in the deserts of Morroco. This application is made with `HTML`, `CSS` and `SASS`.
 
 ![MY photograph](./webroot/images/photograph-page.webp)
 
 ## Functionality
-  - Clean HTML, accurate, consistent, use the right elements, accessible, valid, nice structure and valid.
+  - Clean consistent accessible HTML.
   - Progressively enhancing my HTML, e.g. using `<picture>` elements with multiple sources.
-  - Clean Sass, I used variables at a minimum extend with mixins, functions, abstract classes, orderly output, and expected.
+  - Clean SASS to implement DRY styling. I used variables to extend mixins, functions and abstract classes.
   - Added style to elements that the user can focus, hover over, or interact with.
   - Responsive design and using Custom Properties.
   - I compressed the images to make the page load faster.
   - I used WOFF2 and WOFF for the fonts formats. 
-  - I made the menu on mobile work nicely, using my imagination, you can slide the images and I used Webp as my image format.
+  - I made the menu the mobile responsive and used WEBP as my image format.
 
-### Built With
+## Built With
 
--   Html
--   Css
--   Sass
+-   HTML
+-   CSS
+-   SASS
 
 
 To clone and run this application, you'll need [Git](https://git-scm.com) From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Betsimisaraka/front-end-finals
+$ git clone https://github.com/Betsimisaraka/photograph-gallery
 
 # Install dependencies
-$ npm install node-sass
-$ npm i
+$ npm install
 
 # Run css
 $ npm run scss:watch
