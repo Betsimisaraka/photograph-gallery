@@ -1,4 +1,4 @@
-# Front-end finals
+# Photograph Gallery
 
 <div align="center">
   <h3>
