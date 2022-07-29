@@ -3,11 +3,11 @@
 <div align="center">
   <h3>
     <a href="https://github.com/Betsimisaraka/front-end-finals">
-      Demo
+      Source code
     </a>
     <span> | </span>
-    <a href="https://betsimisaraka.github.io/front-end-finals/">
-      Solution
+    <a href="http://photograph.anita.onja.org/">
+      Demo
     </a>
   </h3>
 </div>
